@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="hi" class="h-full bg-slate-950">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>लॉग इन | Satun Construction Portfolio</title>
+    <meta name="description" content="Satun Construction के अधिकृत एडमिन पोर्टल में लॉग इन करें।" />
+    <meta property="og:title" content="लॉग इन | Satun Construction Portfolio" />
+    <meta property="og:description" content="Satun Construction के अधिकृत एडमिन पोर्टल में लॉग इन करें।" />
+    <meta property="og:type" content="website" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<script>(function(){try{var P="/satun-construction-portfolio";if(location.pathname.indexOf(P+"/")!==0&&location.pathname!==P)return;function fix(u){if(typeof u!=="string")return u;if(u.charAt(0)==="/"&&u.charAt(1)!=="/"&&u.indexOf(P+"/")!==0&&u!==P)return P+u;return u;}var _a=history.pushState;history.pushState=function(s,t,u){return _a.call(this,s,t,fix(u));};var _r=history.replaceState;history.replaceState=function(s,t,u){return _r.call(this,s,t,fix(u));};document.addEventListener("click",function(e){var t=e.target;while(t&&t.tagName!=="A")t=t.parentNode;if(!t||!t.getAttribute)return;var h=t.getAttribute("href");if(!h||h.charAt(0)!=="/"||h.charAt(1)==="/")return;if(h.indexOf(P+"/")===0||h===P)return;t.setAttribute("href",P+h);},true);}catch(_){}})();</script></head>
+<body class="h-full flex items-center justify-center p-4">
+
+    <main class="w-full max-w-md">
+        
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-white tracking-tight">Satun Construction</h1>
+            <p class="text-slate-400 mt-2">व्यवस्थापक पोर्टल में प्रवेश करें</p>
+        </div>
+
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-2xl">
+            <form data-gizo-auth="login" data-gizo-redirect="/admin-upload" class="space-y-6">
+                
+                
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-300 mb-2">ईमेल पता</label>
+                    <input type="email" id="email" name="email" required autocomplete="email" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#D69E2E] transition-all" placeholder="admin@satunconstruction.com" />
+                </div>
+
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="password" class="block text-sm font-medium text-slate-300">पासवर्ड</label>
+                        <a href="/satun-construction-portfolio/forgot" class="text-xs text-[#D69E2E] hover:underline">पासवर्ड भूल गए?</a>
+                    </div>
+                    <div class="relative">
+                        <input type="password" id="password" name="password" required autocomplete="current-password" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#D69E2E] transition-all" placeholder="••••••••" />
+                    </div>
+                </div>
+
+                
+                <div class="flex items-center">
+                    <input type="checkbox" id="remember" name="remember" class="w-4 h-4 rounded border-slate-700 bg-slate-950 text-[#D69E2E] focus:ring-[#D69E2E]" />
+                    <label for="remember" class="ml-2 text-sm text-slate-400">मुझे याद रखें</label>
+                </div>
+
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-[#D69E2E] to-[#B7791F] text-white font-semibold py-3 rounded-xl hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                    लॉग इन करें
+                </button>
+
+                
+                <p data-gizo-status role="status" aria-live="polite" class="text-sm text-center font-medium"></p>
+            </form>
+        </div>
+
+        
+        <p class="text-center text-slate-500 text-sm mt-8">
+            © 2024 Satun Construction. सर्वाधिकार सुरक्षित।
+        </p>
+    </main>
+
+    <script>
+        // Password Toggle functionality
+        const passInput = document.getElementById('password');
+        
+        // Form submission handling is automatically managed by GizoAuth (data-gizo-auth="login")
+        // No custom fetch or XHR required for authentication.
+    </script>
+</body>
+</html>
